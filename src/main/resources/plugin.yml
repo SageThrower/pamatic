@@ -1,0 +1,13 @@
+main: tech.sodiium.pamatic.Main
+author: "Sodium"
+name: Pamatic
+version: r1.0
+api-version: 1.15
+depend: ["FastAsyncWorldEdit", "WorldEdit"]
+
+commands:
+  pasteschematic:
+    description: Pastes a schematic given the path starting from the bukkit server jar
+    permission: pamatic.paste
+    usage: "Usage: /<command> [<text>]"
+    aliases: ["paste", "pamatic", "schempaste"]
