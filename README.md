@@ -1,4 +1,4 @@
-#Pamatic
+<h1>Pamatic</h1>
 Pamatic is an easy to understand and to use Fawe api to paste schematics
 
 I made this because i found the Fawe api very clunky and i wasted about a day trying to paste a single schematic and then relighting it afterwards
@@ -6,7 +6,7 @@ I made this because i found the Fawe api very clunky and i wasted about a day tr
 If you want to use this then go ahead, it probably wont work in the next fawe version but... :)
 
 
-##Usage
+<h2>Usage</h2>
 There are no maven/gradle repos, import it statically.
 
 If you are using maven here is the dependency if you do not know how to import them statically
