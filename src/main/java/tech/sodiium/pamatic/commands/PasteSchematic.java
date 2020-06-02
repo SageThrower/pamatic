@@ -39,7 +39,7 @@ public class PasteSchematic implements CommandExecutor {
                 }
             } catch (NumberFormatException ex) {
                 commandSender.sendMessage(ChatColor.RED + "[Pamatic] The set coordinates do not exist!");
-            } catch (IOException e) {
+            } catch (IOException | NullPointerException ex) {
                 commandSender.sendMessage(ChatColor.RED + "[Pamatic] The set schematic does not exist/isn't a valid schematic!");
             }
         } else {
@@ -52,7 +52,7 @@ public class PasteSchematic implements CommandExecutor {
                 try {
                     SchematicManager.pasteSchematic(new File(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]), world);
                     commandSender.sendMessage(ChatColor.GREEN + "[Pamatic] Schematic pasted successfully!");
-                } catch (IOException e) {
+                } catch (IOException | NullPointerException ex) {
                     commandSender.sendMessage(ChatColor.RED + "[Pamatic] The set schematic does not exist/isn't a valid schematic!");
                 }
             }

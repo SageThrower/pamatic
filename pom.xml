@@ -7,6 +7,18 @@
     <groupId>tech.sodiium</groupId>
     <artifactId>pamatic</artifactId>
     <version>1.0-RELEASE</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
         <repository>
@@ -35,7 +47,7 @@
             <artifactId>fawe-api</artifactId>
             <version>latest</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/FastAsyncWorldEdit-1.15-707.jar</systemPath>
+            <systemPath>${project.basedir}/libs/FastAsyncWorldEdit-1.15-256.jar</systemPath>
         </dependency>
     </dependencies>
 

@@ -45,7 +45,12 @@ public class SchematicManager {
     public static void pasteSchematic(Clipboard clipboard, Coordinate coords, com.sk89q.worldedit.world.World world) {
         EditSession editSession = clipboard.paste(world, coords);
         editSession.flushQueue();
-        FaweAPI.fixLighting(world, clipboard.getRegion(), null, RelightMode.ALL);
+        try {
+            FaweAPI.fixLighting(world, clipboard.getRegion(), null, RelightMode.ALL);
+        } catch (NullPointerException ex) {
+            // Bit clunky fix but it sometimes throws a NullPointerException
+            // It still works tho
+        }
     }
 
     public static void pasteSchematic(Clipboard clipboard, Coordinate coords, World world) {
