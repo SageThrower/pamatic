@@ -1,14 +1,11 @@
 <h1>Pamatic</h1>
-Pamatic is an easy to understand and to use Fawe api to paste schematics
-
-I made this because i found the Fawe api very clunky and i wasted about a day trying to paste a single schematic and then relighting it afterwards
-
+Pamatic is an easy to understand and to use Fawe api to paste schematics<br /><br />
+I made this because i found the Fawe api very clunky and i wasted about a day trying to paste a single schematic and then relighting it afterwards<br /><br />
 If you want to use this then go ahead, it probably wont work in the next fawe version but... :)
 
 
 <h2>Usage</h2>
-There are no maven/gradle repos, import it statically.
-
+There are no maven/gradle repos, import it statically.<br /><br />
 If you are using maven here is the dependency if you do not know how to import them statically
 ```
 <dependency>
@@ -21,8 +18,7 @@ If you are using maven here is the dependency if you do not know how to import t
 </dependency>
 ```
 
-You need to import `tech.sodiium.pamatic.SchematicManager`
-
+You need to import `tech.sodiium.pamatic.SchematicManager`<br /><br />
 Now you have access to some methods that will probably be all you need
 
 - `pasteSchematic(File schematicFile, int x,  y, int z, World world)`<br />
