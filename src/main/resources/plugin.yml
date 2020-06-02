@@ -9,5 +9,5 @@ commands:
   pasteschematic:
     description: Pastes a schematic given the path starting from the bukkit server jar
     permission: pamatic.paste
-    usage: "Usage: /<command> [<text>]"
+    usage: "Usage: /<command> <text> [<x> <y> <z>] [<world>]"
     aliases: ["paste", "pamatic", "schempaste"]
