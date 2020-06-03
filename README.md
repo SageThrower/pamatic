@@ -7,6 +7,7 @@ If you want to use this then go ahead, it probably wont work in the next fawe ve
 <h2>Usage</h2>
 There are no maven/gradle repos, import it statically.<br /><br />
 If you are using maven here is the dependency if you do not know how to import them statically
+
 ```
 <dependency>
     <groupId>tech.sodiium</groupId>
